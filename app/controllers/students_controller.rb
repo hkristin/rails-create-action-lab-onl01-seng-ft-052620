@@ -16,7 +16,7 @@ class StudentsController < ApplicationController
     @student.first_name = params[:first_name]
     @student.last_name = params[:last_name]
     @student.save
-    redirect to student_path(@student)
+    redirect to new_student_path(@student)
   end
 
 end
