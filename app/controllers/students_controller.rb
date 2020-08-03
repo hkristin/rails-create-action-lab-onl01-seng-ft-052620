@@ -13,7 +13,7 @@ class StudentsController < ApplicationController
 
   def create
     @student =  Student.new
-    @student.title = params[:title]
+    @student.title = params[:name]
     @student.description = params[:description]
     @student.save
     redirect to show(@student)
