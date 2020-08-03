@@ -9,10 +9,10 @@ class StudentsController < ApplicationController
   end
 
   def new
-    @student =  Student.new
   end
 
   def create
+    @student =  Student.new
     @student.title = params[:title]
     @student.description = params[:description]
     @student.save
