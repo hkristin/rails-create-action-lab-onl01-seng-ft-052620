@@ -16,7 +16,7 @@ class StudentsController < ApplicationController
     @student.title = params[:title]
     @student.description = params[:description]
     @student.save
-    redirect to new_student_path(@student)
+    redirect to show(@student)
   end
 
 end
